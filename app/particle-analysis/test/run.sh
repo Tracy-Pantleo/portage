@@ -12,5 +12,5 @@ epsilon=1.e-10
 mpirun -np 1 ${ROOT_DIR}/particle-analysis "${ROOT_DIR}/test/gaussian-radial.json"
 
 ${COMPARE} "gold_source.dat" "source.dat" ${epsilon}
-${COMPARE} "gold_exact.dat"  "exact.dat"  ${epsilon}
-${COMPARE} "gold_remap.dat"  "remap.dat"  ${epsilon}
+${COMPARE} "gold_exact.dat"  "exact.dat"  1.e-5
+${COMPARE} "gold_remap.dat"  "remap.dat"  1.e-5
